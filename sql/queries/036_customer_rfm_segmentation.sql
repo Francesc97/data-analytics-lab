@@ -36,8 +36,8 @@ GROUP BY
 )
 SELECT *,
     NTILE(5) OVER (ORDER BY Recency DESC) AS RecencyScore,
-    NTILE(5) OVER (ORDER BY Frequency DESC) AS FrequencyScore,
-    NTILE(5) OVER (ORDER BY Monetary DESC) AS MonetaryScore
+    NTILE(5) OVER (ORDER BY Frequency ASC) AS FrequencyScore,
+    NTILE(5) OVER (ORDER BY Monetary ASC) AS MonetaryScore
 FROM CustomerRFM;
 
 /*
