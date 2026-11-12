@@ -98,7 +98,7 @@ data-analytics-lab
 │       ├── extract_data.py
 │       └── __init__.py
 │
-├── output/
+├── output/         # generated files (ignored by Git)
 │
 ├── compose.yaml
 ├── pyproject.toml
